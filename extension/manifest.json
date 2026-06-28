@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+
+  "name": "Algo Mentor",
+
+  "version": "1.0.0",
+
+  "description": "AI mentor for LeetCode",
+
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/problems/*"],
+
+      "js": ["content.js"],
+
+      "css": ["styles.css"]
+    }
+  ],
+  "host_permissions": ["http://localhost:3000/*"]
+}
